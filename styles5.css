@@ -1,0 +1,176 @@
+.wrapper{
+    display: grid;
+    min-height: 100vh;
+    min-width: 100vw;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 15vh 10vh 10vh 30vh;
+    grid-template-areas: "header header"
+                        "nav nav"
+                         "main main"
+                         "main main"
+                         "search footer";
+}
+
+.header{
+    grid-area: header;
+    font-family: 'Montserrat', sans-serif;
+    background: #D9F2FC;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    grid-area: nav;
+    font-family: 'Montserrat', sans-serif;
+    background: #D9F2FC !important;
+    z-index: 1;
+}
+
+.navpadding{
+    padding-left: 6.5vw;
+    padding-right: 6.5vw;
+    background-color: #D9F2FC;
+}
+
+.main{
+    grid-area: main;
+    background: #D9F2FC;
+}
+
+.search{
+    grid-area: search;
+    background: #D9F2FC;
+}
+
+.subscribe{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 3.9vw;
+    padding-top: .5vh;
+}
+
+.nolabel{
+    display: none;
+}
+
+.subscribebutton{
+    background: #F5C7D6;
+    border-width: 0px;
+    color: #8D8D8D;
+    margin-right: 11vw;
+}
+
+.subscribebutton:hover{
+    background:#F596D6 ;
+}
+
+input:hover{
+    border-color: #F5C7D6;
+    border-width: .2rem;
+}
+
+.fresh{
+    padding-top: 1.5vh;
+    font-family: 'Montserrat', sans-serif;
+    color: #8D8D8D;
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+    background: #D9F2FC;
+    color:  #8D8D8D;
+}
+
+.container1{
+    display: block;
+    text-align: center;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: 20vw;
+    height: 20vh;
+}
+
+.fa-instagram{
+    color: #F596D6;
+    font-size: 4rem;
+}
+
+h6{
+    font-family: 'Montserrat', sans-serif; 
+    padding-top: 1.5vh;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;  
+}
+
+.insta{
+    background: #D9F2FC;
+    border: none;
+}
+
+.fa-instagram:hover{
+    color: #F5C7D6;
+}
+
+@media only screen and (max-width: 767px)  {
+    .wrapper {
+
+        grid-template-columns: 10% auto;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "main main"
+        "search search"
+        "footer footer";
+    }
+
+    .container1{
+        width: 25vw;
+    }
+
+    .foottext{
+        font-size: x-small;
+    }
+
+    .bar{
+        width: 95vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .subscribepad{
+        padding-left: 35vw;
+    }
+
+    h4{
+        font-size: medium;
+    }
+
+    .shrink{
+        font-size: x-small;
+        padding: 2vh;
+    }
+}
+
+.orders{
+    font-family: 'Montserrat', sans-serif;  
+    width: 40vw;
+    height: 30vh;
+    text-align: center;
+    margin: 1.5vw;
+    background: white;
+    padding: 4vw;
+    border-radius: 7px;
+    background: #F5F2C7;
+}
+
